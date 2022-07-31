@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family:'poppins' ,sans-serif;
+    background-color: white;
+    padding: 2.5rem;
+    
+}
+.main{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%);
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100rem;
+    padding: 100px;
+    color:#fff;
+
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    
+
+}
+.heading__main{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.heading{
+    padding: 2.5rem;
+}
+.heading__sub{
+    font-size: 1.5rem;
+    opacity: 70%;
+}
+.forms{
+    display: block;
+    padding: 2.5rem;
+}
+.forms__text{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: .5rem;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.forms__box{
+    background: #fff ;
+    padding: 2.5rem;
+    border-radius: .5rem;
+}
+.forms__input input{
+    display: grid;
+    margin-bottom: 20px;
+    border-radius: .5rem;
+    width: 100%;
+    padding: 1.5rem;
+    
+}
+.forms__input input:active{
+    border:hsl(248, 32%, 49%) 1px ;
+}
+.forms__dtt{
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-weight: 500;
+    padding: 1.5rem;
+    text-align: center;
+}
+h6{
+    color:hsl(246, 25%, 77%);
+    padding: 0.5rem;
+    text-align: center;
+}
+h6 #span{
+    color: hsl(0, 100%, 74%);
+}
+@media (max-width:768px){
+    html{
+        font-size: 60%;
+    }
+    body{
+        width:100%;
+        padding: 1.5rem;
+    }
+    .main{
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+    .container{
+        display: inline-block;
+    }
+
+    .heading{
+        margin:0;
+    }
+    .heading__main{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .heading__sub{
+        font-size: 1.5rem;
+        text-align: center;
+        opacity: 70%;
+    }
+    .forms__box{
+        padding: 1rem;
+    }
+    .forms__text{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .forms__input input{
+        padding: .5rem;
+    }
+}
